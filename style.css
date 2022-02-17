@@ -1,0 +1,25 @@
+.titolih1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 400%;
+}
+
+.titolih2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 200%;
+}
+
+.titolih3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 150%;
+}
+
+.foot {
+    background-color: grey;
+}
+
+.migliori {
+    text-align: center;
+}
