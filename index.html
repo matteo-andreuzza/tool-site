@@ -18,6 +18,51 @@
     <script src="https://kit.fontawesome.com/23bf9360c6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Tool senza fine</title>
+    <style>
+        .titolih1 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size: 400%;
+        }
+        
+        .titolih2 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size: 200%;
+        }
+        
+        .titolih3 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            font-size: 150%;
+        }
+        
+        .foot {
+            background-color: grey;
+        }
+        
+        .migliori {
+            text-align: center;
+        }
+        
+        .migliori li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 2%;
+        }
+        
+        .migliori ul {
+            width: 100%;
+            left: 0px;
+            padding-left: 0%;
+            padding-right: 0%;
+            right: 0px;
+        }
+        
+        .intestazione {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +78,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Produttività</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ufficio</a>
+                        <a class="nav-link" href="./categorie/ufficio/index.html">Ufficio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">I migliori del mese</a>
@@ -79,15 +124,50 @@
     </marquee>
     <div class="migliori">
         <br><br>
-        <h2 class="titolih2">I migliori di questo mese:</h2>
-        <br><br><br>
-        <img src="https://logos-download.com/wp-content/uploads/2019/11/Miro_Logo.png" alt="miro" srcset="https://logos-download.com/wp-content/uploads/2019/11/Miro_Logo.png" width="7%">
-        <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/whimsical_logo-freelogovectors.net_.png" alt="" srcset="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/whimsical_logo-freelogovectors.net_.png" width="10%">
-        <img src="https://images.ctfassets.net/wjg1udsw901v/78Ws2s56LgCLoxkx3Xdcsl/083d00cd84eeec428087bbab65ae3580/obsidian-logo.png" alt="" srcset="https://images.ctfassets.net/wjg1udsw901v/78Ws2s56LgCLoxkx3Xdcsl/083d00cd84eeec428087bbab65ae3580/obsidian-logo.png"
-            width="10%">
-        <img src="https://illlustrations.co/logo.svg" alt="illustation" srcset="https://illlustrations.co/logo.svg" width="10%">
-        <img src="https://csite.nicepage.com/Images/logo-w.png" alt="" srcset="https://csite.nicepage.com/Images/logo-w.png" width="10%">
-        <img src="https://getpixelsnap.com/img/logo.da7bb472.svg" alt="" srcset="https://getpixelsnap.com/img/logo.da7bb472.svg" width="10%">
+        <h2 class="titolih2">I migliori del mese:</h2>
+        <ul>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://logos-download.com/wp-content/uploads/2019/11/Miro_Logo.png" class="card-img-top" alt="https://logos-download.com/wp-content/uploads/2019/11/Miro_Logo.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Miro</h5>
+                        <p class="card-text">Una lavagna condivisa per condividere idee e progetti</p>
+                        <a href="#" class="btn btn-primary">Miro</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/whimsical_logo-freelogovectors.net_.png" class="card-img-top" alt="https://cdn.freelogovectors.net/wp-content/uploads/2021/07/whimsical_logo-freelogovectors.net_.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Whimsical</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.ctfassets.net/wjg1udsw901v/78Ws2s56LgCLoxkx3Xdcsl/083d00cd84eeec428087bbab65ae3580/obsidian-logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Obsidian</h5>
+                        <p class="card-text">Un potente strumento per prendere note ed organizzare le idee con il markdown</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://getpixelsnap.com/img/logo.da7bb472.svg" class="card-img-top" alt="..." width="60%">
+                    <div class="card-body">
+                        <h5 class="card-title">getpixelsnap</h5>
+                        <p class="card-text">Uno strumento molto potente in grado di misurare ogni cosa sul nostro schermo</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">

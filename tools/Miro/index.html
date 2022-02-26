@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/23bf9360c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Miro</title>
+</head>
+<style>
+    .intestazione {
+        height: 30%;
+        text-align: center;
+        margin-top: 3%;
+    }
+    
+    .intestazione img {
+        margin-bottom: 2%;
+        border-radius: 3%;
+    }
+    
+    .foto {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+        width: 60%;
+    }
+    
+    .cassone {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        background-color: rgb(238, 244, 248);
+        border-radius: 3%;
+    }
+    
+    #descrizione {
+        margin: 3%;
+    }
+    
+    .sliders {
+        margin-top: 3%;
+        margin-right: 13%;
+        background-color: transparent;
+    }
+    
+    $container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px);
+</style>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Produttività</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./categorie/ufficio/index.html">Ufficio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">I migliori del mese</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutte le categorie
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Casa e famiglia</a></li>
+                            <li><a class="dropdown-item" href="#">Ufficio</a></li>
+                            <li><a class="dropdown-item" href="#">Produttività</a></li>
+                            <li><a class="dropdown-item" href="#">Note</a></li>
+                            <li><a class="dropdown-item" href="#">Scuola e studio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="intestazione">
+        <img src="https://cdn.worldvectorlogo.com/logos/miro-2.svg" alt="miro" srcset="https://cdn.worldvectorlogo.com/logos/miro-2.svg" width="10%">
+        <h1>Miro</h1>
+        <br>
+        <h6>di Realtimeboard Inc</h6>
+    </div>
+    <div class="foto">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://help.miro.com/hc/article_attachments/4403291029906/mceclip3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-black d-none d-md-block">
+                        <h5>Una lavagna digitale</h5>
+                        <p>Scrivi, crea, appunta e disegna</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://help.miro.com/hc/article_attachments/4403291051154/Screenshot_2021-07-05_at_09.45.07.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-black d-none d-md-block">
+                        <h5>Collabbora</h5>
+                        <p>Condividi lo schermo, integra le riunioni online e collabbora da remoto</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static-website.miro.com/static/images/page/apps/apps-bg-mini.png?version=develop.647.production" class="d-block w-100" alt="...">
+                    <div class="carousel-caption text-black d-none d-md-block">
+                        <h5>Per ogni dispositivo</h5>
+                        <p>Scarica l'app per lavorare da ogni dispositivo</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="cassone">
+        <div id="descrizione">
+            <h2>Descrizione</h2>
+            <br><br>
+            <h8>Miro è un tool che ti permette di creare lavagne digitali per prendere appunti, organizzare note, fare schemi, diagrammi di flusso e forme grafiche collaborando con i colleghi in tempo reale. Miro è la piattaforma di lavagna online che offre
+                uno spazio per tutto il pensiero non strutturato, la co-creazione e la collaborazione visiva che aiutano le idee innovative a prendere vita. Con l'app di Miro per dispositivi Windows, puoi portare la potenza dell'infinita tela della lavagna
+                di Miro in qualsiasi riunione remota, di persona o ibrida per portare la collaborazione a un livello superiore.
+                <br> I nostri clienti adorano usare Miro per:
+                <ul>
+                    <li> Organizza riunioni online o ibride coinvolgenti</li>
+                    <li> Cattura e raccogli idee su nuove idee con un team</li>
+                    <li> Pianificare e gestire flussi di lavoro agili e rituali di Scrum</li>
+                    <li> Creare percorsi utente, mappare i processi e sviluppare personaggi</li>
+                    <li> Insegna lezioni online e facilita i workshop</li>
+                    <li> Creare vision board di idee e ispirazione</li>
+                </ul>
+
+
+                Con Miro per dispositivi Windows puoi:
+                <ul>
+                    <li> Creare, visualizzare e modificare più schede</li>
+                    <li> Condividi le bacheche e invita i membri del team a modificare
+                    </li>
+                    <li> Rivedere, aggiungere e risolvere commenti
+                    </li>
+                    <li> Ricerca di contenuti all'interno delle bacheche
+                    </li>
+                    <li> Visualizza le idee con una mappa mentale
+                    </li>
+                    <li> Scansiona post-it cartacei e convertili in note digitali modificabili
+                    </li>
+                    <li> Carica immagini, immagini, documenti, fogli di calcolo e altro ancora
+                    </li>
+                    <li> Disegna concetti e disegna nuove idee di design con il tocco o uno stilo
+                    </li>
+                    <li> Converti i disegni a penna in forme, note adesive e linee con Smart Drawing
+                    </li>
+                    <li> Utilizzare lazo per selezionare e spostare schizzi, disegni o testo
+                    </li>
+                    <li> Usa Evidenziatore per mostrare informazioni importanti durante una riunione
+                    </li>
+                    <li> Trasforma la collaborazione del tuo team e crea un'esperienza inclusiva e coinvolgente che funzioni come fai tu, con la potenza della lavagna online di Miro per dispositivi Windows.
+                    </li>
+                </ul>
+            </h8>
+        </div>
+    </div>
+    <div class="cassone" id="recensioni">
+        <h2>Recensioni</h2>
+        <div class="sliders">
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <br>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Resta connesso con i nostri social media:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/matteo-andreuzza/tool-site" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Tool senza fine
+                    </h6>
+                    <p>
+                        Trova un tool per ogni cosa, migliorati la vita e semplifica il lavoro di ogni giorno.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Tools
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Obsidian</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Miro</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Nicepage</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">PixelSnap</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Categorie
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Casa</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Lavoro</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Ufficio</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Dati</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contatti
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i>Italia</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i> efish@altervista.org
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        Made with 🧡 by
+        <a href="https://github.com/matteo-andreuzza">Matte_dev</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>
