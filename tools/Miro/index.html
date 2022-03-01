@@ -61,6 +61,12 @@
         margin: 2%;
     }
     
+    .line {
+        background-color: black;
+        border: 0.3px solid #dbd9d9;
+        margin: 2%;
+    }
+    
     $container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px);
 </style>
 
@@ -145,8 +151,11 @@
     </div>
     <div class="cassone">
         <div id="descrizione">
-            <h2>Descrizione</h2>
-            <br><br>
+            <h3>Descrizione</h3>
+        </div>
+        <div class="line"></div>
+        <div id="descrizione">
+            <br>
             <h8>Miro è un tool che ti permette di creare lavagne digitali per prendere appunti, organizzare note, fare schemi, diagrammi di flusso e forme grafiche collaborando con i colleghi in tempo reale. Miro è la piattaforma di lavagna online che offre
                 uno spazio per tutto il pensiero non strutturato, la co-creazione e la collaborazione visiva che aiutano le idee innovative a prendere vita. Con l'app di Miro per dispositivi Windows, puoi portare la potenza dell'infinita tela della lavagna
                 di Miro in qualsiasi riunione remota, di persona o ibrida per portare la collaborazione a un livello superiore.
@@ -193,7 +202,11 @@
     </div>
     <div class="cassone">
         <div class="text">
-            <h2>Categorie</h2>
+            <h3>Categorie</h3>
+        </div>
+        <div class="line"></div>
+
+        <div class="text">
             <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
                 <div class="card-header">Categoria</div>
                 <div class="card-body">
@@ -202,7 +215,9 @@
                 </div>
             </div>
         </div>
+        <br>
     </div>
+    <br>
 </body>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
